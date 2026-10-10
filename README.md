@@ -40,9 +40,24 @@ SentinelCFR separates **Maintenance/Ingestion** from **Runtime Inference** so th
 - **Generation & Tool-Calling**: The OpenAI-compatible client in `app/rag.py` and `app/agent.py` targets the local Ollama loopback interface (`http://127.0.0.1:11434/v1` / `http://localhost:11434/v1`) serving `safety-qwen` (Qwen 2.5 7B Instruct Q4_K_M).
 - **Strict Corpus Boundary**: If a query is not covered by the documents indexed from `docs/`, the system states that the required documentation is not present in the local index; it never performs external web queries.
 
+## 2. Operator Interface & Workflow
+
+SentinelCFR provides an air-gapped operator dashboard (Gradio) for real-time statutory inquiry and automated incident evaluation:
+
+### Regulatory Q&A & Statutory Verification
+Operators query federal regulations or clarify site hazards. The engine performs dense vector retrieval against local 29 CFR standards and synthesizes responses with deterministic bracketed source citations.
+
+![Safety Rulebook Assistant](docs/assets/ui_rulebook.png)
+
+### Multi-Worker Incident Evaluation & Tool-Calling
+Edge camera systems or field personnel submit structured infraction payloads. The compliance agent executes multi-step tool calls (`search_rules`), maps each infraction to governing federal standards, and compiles actionable corrective action plans.
+
+![Incident Evaluation](docs/assets/ui_incident_report.png)
+
+
 ---
 
-## 2. Hardware Specifications & Resource Profile
+## 3. Hardware Specifications & Resource Profile
 
 Validated on a standard single-GPU workstation configuration:
 
@@ -55,7 +70,7 @@ Validated on a standard single-GPU workstation configuration:
 
 ---
 
-## 3. Empirical Benchmarks (Proven Accuracy)
+## 4. Empirical Benchmarks (Proven Accuracy)
 
 Evaluated via `eval_rag.py` against the 10-question federal OSHA benchmark suite (`data/eval_qa.json`), with output logged to `data/eval_results.json`:
 
@@ -67,7 +82,7 @@ Evaluated via `eval_rag.py` against the 10-question federal OSHA benchmark suite
 
 ---
 
-## 4. Document Ingestion Procedure
+## 5. Document Ingestion Procedure
 
 Document indexing is a maintenance-phase operation (`python -m app.rag`) decoupled from runtime API and UI requests.
 
@@ -91,7 +106,7 @@ python scripts/fetch_osha_docs.py --standard 1910.1200
 
 ---
 
-## 5. Quickstart & API Reference
+## 6. Quickstart & API Reference
 
 ### Environment Setup & Model Registration
 ```powershell

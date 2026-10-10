@@ -64,7 +64,7 @@ with gr.Blocks(title="SentinelCFR") as demo:
             examples=[
                 ['[{"person": 0, "missing": "helmet"}]'],
                 ['[{"person": 0, "missing": "goggles"}]'],
-                ['[{"person": 0, "missing": "footwear"}, {"person": 0, "missing": "gloves"}]'],
+                ['[{"person": 0, "missing": "footwear"}, {"person": 1, "missing": "gloves"}]'],
             ],
             inputs=v
         )
