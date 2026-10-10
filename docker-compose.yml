@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  sentinelcfr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentinelcfr
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "7860:7860"
+    volumes:
+      - ./data:/app/data
+      - ./docs:/app/docs
+    environment:
+      - LLM_BASE_URL=http://host.docker.internal:11434/v1
+      - LLM_MODEL=safety-qwen
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
+      - PYTHONUNBUFFERED=1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

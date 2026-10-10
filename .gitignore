@@ -1,0 +1,20 @@
+# Vector Store & Runtime Data
+data/chroma/
+data/sh17/
+
+# Environment & Secrets
+.env
+
+# Python Bytecode & Test Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs & Temporary Files
+*.tmp
+*.log
+
+# IDE & Editor Directories
+.vscode/
+.idea/

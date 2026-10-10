@@ -1,0 +1,20 @@
+# Web & API Framework
+fastapi
+uvicorn
+python-multipart
+gradio
+
+# Vision & Image Processing
+ultralytics
+pillow
+opencv-python-headless
+
+# Vector Store & RAG
+chromadb
+sentence-transformers
+pypdf
+openai
+python-dotenv
+
+# Testing & Verification
+pytest

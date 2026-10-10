@@ -1,0 +1,134 @@
+{
+  "total_queries": 10,
+  "retrieval_hits": 9,
+  "retrieval_precision": 0.9,
+  "retrieval_precision_pct": 90.0,
+  "citation_evaluated_count": 2,
+  "citation_hits": 2,
+  "citation_rate": 1.0,
+  "citation_rate_pct": 100.0,
+  "retrieval_details": [
+    {
+      "query": "What are the OSHA requirements for industrial protective helmets and head protection under 1910.135?",
+      "expected_standard": "1910.135",
+      "retrieved_sources": [
+        "OSHA3151.pdf",
+        "29_CFR_1926.100.pdf",
+        "29_CFR_1910.135_head_protection.pdf",
+        "OSHA3151.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What eye and face protection standards apply to flying particle hazards under 1910.133?",
+      "expected_standard": "1910.133",
+      "retrieved_sources": [
+        "OSHA3151.pdf",
+        "29_CFR_1910.133_eye_face.pdf",
+        "29_CFR_1910.133_eye_face.pdf",
+        "29_CFR_1910.133_eye_face.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What standards govern protective footwear and safety shoes under 1910.136?",
+      "expected_standard": "1910.136",
+      "retrieved_sources": [
+        "29_CFR_1910.136_foot.pdf",
+        "29_CFR_1910.136_foot.pdf",
+        "OSHA3151.pdf",
+        "OSHA3151.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What are the OSHA requirements for written respiratory protection programs under 1910.134?",
+      "expected_standard": "1910.134",
+      "retrieved_sources": [
+        "OSHA3151.pdf",
+        "OSHA3132.pdf",
+        "OSHA3151.pdf",
+        "29_CFR_1910.134.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What are the entry permit procedures for permit-required confined spaces under 1910.146?",
+      "expected_standard": "1910.146",
+      "retrieved_sources": [
+        "29_CFR_1910.146.pdf",
+        "29_CFR_1910.146.pdf",
+        "29_CFR_1910.146.pdf",
+        "29_CFR_1910.146.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What procedures govern the control of hazardous energy and lockout/tagout under 1910.147?",
+      "expected_standard": "1910.147",
+      "retrieved_sources": [
+        "29_CFR_1910.147.pdf",
+        "29_CFR_1910.147.pdf",
+        "29_CFR_1910.147.pdf",
+        "29_CFR_1910.147.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What safety procedures are required for process safety management of highly hazardous chemicals under 1910.119?",
+      "expected_standard": "1910.119",
+      "retrieved_sources": [
+        "29_CFR_1910.119.pdf",
+        "29_CFR_1910.119.pdf",
+        "29_CFR_1910.119.pdf",
+        "OSHA3132.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What are the head protection and protective helmet requirements in construction under 1926.100?",
+      "expected_standard": "1926.100",
+      "retrieved_sources": [
+        "OSHA3151.pdf",
+        "OSHA3151.pdf",
+        "OSHA3151.pdf",
+        "29_CFR_1926.100.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What are the general requirements for employer PPE hazard assessment and provision under 1910.132?",
+      "expected_standard": "1910.132",
+      "retrieved_sources": [
+        "OSHA3151.pdf",
+        "29_CFR_1910.132_general_PPE_requirements.pdf",
+        "OSHA3151.pdf",
+        "OSHA3151.pdf"
+      ],
+      "hit": true
+    },
+    {
+      "query": "What are the OSHA general industry standards for employee hand protection under 1910.138?",
+      "expected_standard": "1910.138",
+      "retrieved_sources": [
+        "OSHA3132.pdf",
+        "OSHA3151.pdf",
+        "OSHA3151.pdf",
+        "OSHA3151.pdf"
+      ],
+      "hit": false
+    }
+  ],
+  "citation_details": [
+    {
+      "query": "What are the OSHA requirements for industrial protective helmets and head protection under 1910.135?",
+      "answer": "Under 29 CFR 1910.135, OSHA requires that employees working in areas where there is a possible danger of head injury from impact, or from falling or flying objects, or from electrical shock and burns, shall be protected by protective helmets. The employer must provide each employee with head protection that meets the specifications contained in any of the following consensus standards:\n\n- American National Standards Institute (ANSI) Z89.1-2009\n- American National Standards Institute (ANSI) Z89.1-2003\n- American National Standards Institute (ANSI) Z89.1-1997\n\nHead protection devices that the employer demonstrates are at least as effective as those constructed in accordance with one of the above consensus standards will also be deemed compliant. [29_CFR_1926.100.pdf p.1]",
+      "has_citation": true
+    },
+    {
+      "query": "What eye and face protection standards apply to flying particle hazards under 1910.133?",
+      "answer": "Under 29 CFR 1910.133, when there is an exposure to eye or face hazards from flying particles, the employer must ensure that each affected employee uses appropriate eye or face protection. Additionally, if there is a hazard from flying objects, the employer must ensure that each affected employee uses eye protection that provides side protection. Detachable side protectors, such as clip-on or slide-on side shields, that meet the pertinent requirements of this section are acceptable [29_CFR_1910.133_eye_face.pdf p.1].",
+      "has_citation": true
+    }
+  ]
+}

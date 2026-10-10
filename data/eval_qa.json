@@ -1,0 +1,42 @@
+[
+  {
+    "query": "What are the OSHA requirements for industrial protective helmets and head protection under 1910.135?",
+    "expected_standard": "1910.135"
+  },
+  {
+    "query": "What eye and face protection standards apply to flying particle hazards under 1910.133?",
+    "expected_standard": "1910.133"
+  },
+  {
+    "query": "What standards govern protective footwear and safety shoes under 1910.136?",
+    "expected_standard": "1910.136"
+  },
+  {
+    "query": "What are the OSHA requirements for written respiratory protection programs under 1910.134?",
+    "expected_standard": "1910.134"
+  },
+  {
+    "query": "What are the entry permit procedures for permit-required confined spaces under 1910.146?",
+    "expected_standard": "1910.146"
+  },
+  {
+    "query": "What procedures govern the control of hazardous energy and lockout/tagout under 1910.147?",
+    "expected_standard": "1910.147"
+  },
+  {
+    "query": "What safety procedures are required for process safety management of highly hazardous chemicals under 1910.119?",
+    "expected_standard": "1910.119"
+  },
+  {
+    "query": "What are the head protection and protective helmet requirements in construction under 1926.100?",
+    "expected_standard": "1926.100"
+  },
+  {
+    "query": "What are the general requirements for employer PPE hazard assessment and provision under 1910.132?",
+    "expected_standard": "1910.132"
+  },
+  {
+    "query": "What are the OSHA general industry standards for employee hand protection under 1910.138?",
+    "expected_standard": "1910.138"
+  }
+]
