@@ -110,8 +110,10 @@ python scripts/fetch_osha_docs.py --standard 1910.1200
 
 ### Environment Setup & Model Registration
 ```powershell
-# 1. Activate the Conda environment
-conda activate safetycopilot
+# 1. Create and activate the Conda environment
+conda create -n sentinelcfr python=3.11 -y
+conda activate sentinelcfr
+pip install -r requirements.txt
 
 # 2. Build the local Ollama model from Modelfile (num_ctx 8192, temperature 0)
 ollama create safety-qwen -f Modelfile
